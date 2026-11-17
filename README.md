@@ -77,13 +77,13 @@ python mcp_server.py
 ```
 
 ### 3. Model Context Protocol (MCP) Config
-Add to your `claude_desktop_config.json` or agent runner config:
+Add to your `claude_desktop_config.json` or agent runner config, replacing `/absolute/path/to` with the local checkout path:
 ```json
 {
   "mcpServers": {
     "genpark-agentic-commerce-a2m-bargaining-negotiator-skill": {
       "command": "python",
-      "args": ["path/to/genpark-agentic-commerce-a2m-bargaining-negotiator-skill/mcp_server.py"]
+      "args": ["/absolute/path/to/genpark-agentic-commerce-a2m-bargaining-negotiator-skill/mcp_server.py"]
     }
   }
 }
